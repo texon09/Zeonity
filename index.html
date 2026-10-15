@@ -159,7 +159,7 @@ select,input,textarea{max-width:100%}
 @media(max-width:360px){.logo{font-size:0}}
 /* nav bar replaces icon row */
 #bTheme,#bText,#bA11y,#bMenu,#bSearch{display:none!important}.navlink{background:transparent;border-color:transparent;font-weight:500;padding:0 var(--s3)}.navlink:hover{background:var(--alt);border-color:transparent}
-@media(max-width:1440px){
+@media all{
 .bar{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'logo acts' 'nav nav';height:auto;gap:0 var(--s3);padding:var(--s2) var(--s5)}
 .logo{grid-area:logo}.acts{grid-area:acts}
 nav.main,nav.main.open{grid-area:nav;display:flex;position:static;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:var(--s1);padding:var(--s1) 0 var(--s2);border:0;box-shadow:none;max-height:none;overflow:visible;background:transparent}
@@ -169,6 +169,9 @@ nav.main,nav.main.open{grid-area:nav;display:flex;position:static;flex-direction
 @media(max-width:800px){header.top{position:static}nav.main a,.navlink,.more summary{min-height:40px;padding:0 var(--s2);font-size:.95rem}.bar{padding:var(--s2) var(--s4)}}
 @media(max-width:480px){.cta{padding:0 var(--s3);font-size:.9rem}}
 .more{border:0;background:transparent;padding:0;margin:0}.more .dd{background:var(--card)}@media(max-width:700px){.lang{max-width:116px;padding:0 var(--s2)}}
+nav.main,nav.main.open{border-top:1px solid var(--bd);margin-top:var(--s1);padding-top:var(--s1)}.bar{align-items:center}.acts{justify-content:flex-end;min-width:0}
+@media(max-width:440px){.logo{font-size:0}.lang{max-width:104px}}
+@media(max-width:700px){.lang{max-width:none;width:auto;font-size:.95rem}}
 </style></head><body>
 <a class="skip" href="#main">Skip to main content</a><div id="bg" aria-hidden="true"></div>
 <header class="top"><div class="bar">
